@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 #{ title }
+	p Welcome User #{ title }
+	each user, i in users
+		p
+			a(href="/edit/#{ user.id }" title="Update this todo item") #{ (i+1) + ' - ' + user.user }
+	p Esto va a afuera del each

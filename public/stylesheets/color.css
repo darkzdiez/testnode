@@ -1,0 +1,32 @@
+#page-wrapper {
+  background-color: #FFFFFF;
+}
+.color-1-bd,
+#top-bar,
+blockquote {
+  border-bottom-color: #E15119;
+  border-left-color-value: #E15119;
+  border-right-color-value: #E15119;
+  border-top-color: #E15119;
+}
+.color-1-bg,
+#top-bar,
+#top-bar .toggle,
+.price-plan.featured .price,
+.price-plan.featured .footer,
+.price-plan.featured .title,
+.section-title .line,
+ul.portfolio-filter li.active a,
+ul.styled-list i,
+.bx-pager.bx-default-pager a:hover,
+.bx-pager.bx-default-pager a.active,
+.testimonial-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.testimonial-slider .bx-wrapper .bx-pager.bx-default-pager a.active,
+.portfolio-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.portfolio-slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background-color: #E15119;
+}
+#top-bar .toggle {
+  background-image: url("../images/top-toggle.png");
+  color: #FFFFFF;
+}

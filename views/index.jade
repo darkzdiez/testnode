@@ -1,0 +1,194 @@
+doctype html
+html
+	head
+		title Hablemos Web
+		link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+		link(href='/stylesheets/jquery.bxslider.css', rel='stylesheet')
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Roboto+Condensed:400,700italic,700,400italic,300italic,300|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Open+Sans+Condensed:300,700,300italic', rel='stylesheet', type='text/css')
+		link(href='', rel='stylesheet')
+		link(href='/stylesheets/color.css', rel='stylesheet')
+		link(href='/stylesheets/template.css', rel='stylesheet')
+		body
+			#page-wrapper
+				#top-bar.color-1-bg.color-1-bd.row
+					span.toggle.color-1-bg
+				header#header
+					//Container 
+					.container
+						//Main Navigation================================================== 
+						#main-nav.navbar.navbar-default
+							//header 
+							.navbar-header
+								button.navbar-toggle(data-target='.navbar-collapse', data-toggle='collapse', type='button')
+									span.fa.fa-bars.fa-lg
+								a.navbar-brand(href='')
+									h1#logo.color-2-80pc
+										img(src='images/LOGO-HABLEMOS-WEB2.svg', style='float: left; transform: scale(1.5); margin-right: 10px;')
+										| Hablemos
+										span.color-1 WEB
+							///header
+							//nav-collapse 
+							.navbar-collapse.collapse
+								ul.nav.navbar-nav.navbar-right
+									li.active
+										a(href='') Inicio
+									li
+										a(href='') Cursos y Conferencias
+									li.dropdown
+										a.dropdown-toggle(data-toggle='dropdown', href='#')
+											| Comunidad
+											span.child-symbol +
+										ul.dropdown-menu
+											li
+												a(href='') Blog
+											li
+												a(href='') Foro
+									li
+										a(href='') Contacto
+							///nav-collapse
+						///Main Nav================================================== 
+					///Container
+				section#intro-block.pic-bg-1.dark-bg
+					//Overlay 
+					.overlay.color-2-bg-90pc
+						//Container 
+						.container
+							//Slider Wrapper 
+							.intro-slider(style='visibility: hidden;')
+								//BxSlider 
+								ul.bxslider
+									li
+										.slide
+											h1.font-2
+												| 2014
+												span.color-1 CON
+												| NUEVO
+												span.color-1 SITIO
+												| !
+											p Con mucho mas contenido y nuevas secciones.
+									li
+										.slide
+											h1.font-2
+												| CON
+												span.color-1 MUCHOS 
+												| NUEVOS
+												span.color-1 CURSOS
+												| !
+											p en desarollo web backend y fronend, desarrollo de aplicaciones moviles.
+								///BxSlider 
+								.buttons
+									.input-group.input-group-lg
+										input.form-control(type='text')
+										span.input-group-btn
+											button.btn.btn-color.color-1-bg.btn-lg.block-xs.margin-x-auto-xs(type='button')
+												i.fa.fa-arrow-right
+												| Suscribirme!
+							///Intro Wrapper 
+						///Container 
+					///Overlay 
+				section.full-block
+					//Container 
+					.container
+						.row
+							.col-sm-6.col-md-4
+								.thumbnail
+									h3 Nombre del Curso
+									img(src='https://mejorando.la/media/videos/ui-no-es-lo-mismo-que-ux-thumb.jpg', style='width: 100%;')
+									.caption
+										p
+											| texto descriptivo ligeramente largo preferiblemente con un numero determinado de lineas para que se vea mejor
+										p
+											a.btn.btn-primary(href='#', role='button') Facebook
+											a.btn.btn-default(href='#', role='button') Otras Redes
+							.col-sm-6.col-md-4
+								.thumbnail
+									h3 Nombre del Curso
+									img(src='https://mejorando.la/media/videos/carreras-universitarias-y-otros-caminos-en-tecnologia-thumb.jpg', style='width: 100%;')
+									.caption
+										p
+											| texto descriptivo ligeramente largo preferiblemente con un numero determinado de lineas para que se vea mejor
+										p
+											a.btn.btn-primary(href='#', role='button') Facebook
+											a.btn.btn-default(href='#', role='button') Otras Redes
+							.col-sm-6.col-md-4
+								.thumbnail
+									h3 Nombre del Curso
+									img(src='https://mejorando.la/media/videos/el-nuevo-microsoft-de-satya-nadella-thumb.jpg', style='width: 100%;')
+									.caption
+										p
+											| texto descriptivo ligeramente largo preferiblemente con un numero determinado de lineas para que se vea mejor
+										p
+											a.btn.btn-primary(href='#', role='button') Facebook
+											a.btn.btn-default(href='#', role='button') Otras Redes
+					///Container 
+				//Footer================================================== 
+				footer#footer.color-2-bg
+					//Top Footer
+					#top-footer
+						//Container 
+						.container
+							//Row 
+							.row
+								//Column 
+								.col-xs-12.col-sm-4.col-md-4.margin-b-30-xs
+									.line-title
+										h4 ¿Quiénes somos?
+									p
+										| Somos un grupo de profecionales en distntas areas de la computacion trabajando para lograr adentrar a las personas en el mundo de desarrollo
+									ul.social-links.clearfix
+										li
+											a(href='#')
+												i.fa.fa-tumblr
+										li
+											a(href='#')
+												i.fa.fa-facebook
+										li
+											a(href='#')
+												i.fa.fa-twitter
+										li
+											a(href='#')
+												i.fa.fa-rss
+										li
+											a(href='#')
+												i.fa.fa-google-plus
+								//Column /END 
+								//Column 
+								.col-xs-12.col-sm-4.col-md-4.margin-b-30-xs
+									.line-title
+										h4 Tweets mas Reciente
+									#tweets.clearfix
+								//Column /END 
+								//Column 
+								.col-xs-12.col-sm-4.col-md-4
+									.line-title
+										h4 boletín informativo
+									p
+										| Recibe por correo las acualizaciones y contenido relevante de la comunidad HablemosWeb.com.
+									.input-group.newsletter-signup
+										input.form-control(type='text', placeholder='Tu Email')
+										span.input-group-btn
+											button.btn.btn-color.color-1-bg(type='button') Suscribirme
+								//Column /END 
+							//Row /END 
+						//Container /END 
+					//Top Footer /END
+					//Bottom Footer
+					#bottom-footer
+						//Container 
+						.container
+							span#copy-text.pull-left.no-float-xs.block-xs.align-center-xs Comunidad HablemosWeb.com.
+							ul#footer-links.pull-right.no-float-xs.block-xs.align-center-xs
+								li
+									a(href='#') Acerca de
+								li
+									a(href='#') Privacidad y Condiciones
+								li
+									a(href='#') Contacto
+						//Container /END 
+					//Bottom Footer /END
+				//Footer /END================================================== 
+			script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+			script(src='javascripts/bootstrap.min.js')
+			script(src='javascripts/jquery.bxslider.min.js')
+			script(src='javascripts/tweetable.jquery.js')
+			script(src='javascripts/custom.js')
