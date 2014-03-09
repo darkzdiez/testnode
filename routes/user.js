@@ -1,12 +1,5 @@
 /* GET users listing. */
-var mysql = require('mysql');
-
-var db = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'dbadmin$yara$2010'
-});
-
+require( '../config.db.js' )
 db.query('USE test');
 
 exports.list = function(req, res){
